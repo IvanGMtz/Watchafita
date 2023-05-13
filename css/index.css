@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(34, 34, 41);
+}
+
+.items a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+.items a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background: rgb(253, 253, 253);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: .5s;
+}   
+.items :hover::after{
+    transform: scale(1);
+}
+.items{
+    margin: 10px;
+    list-style: none;
+   
+}
+nav ul {
+    display: flex;
+}
+
+#planes{
+    margin: 1rem;
+    padding: 10px;
+    color: azure;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#planes:hover{
+    background-color: rgb(59, 53, 150);
+}
+#planes a{
+    color: azure;
+    text-decoration: none;
+}
+.pl img{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pl{    
+    background-color: transparent;
+    height: 300px; 
+}
+
+a{
+        text-decoration: none;
+        color: white;
+    }
+    
+.btn{
+        margin-top: 10%;
+        font-size: larger;
+    }
+
+.card-body {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:rgb(34, 34, 41);   
+}
+
+.card a {
+    border: #443C68;
+    align-self: center;
+}
+.card h2{
+    text-align: center;
+}
+
+.row-btn{
+    text-align: center;
+}
